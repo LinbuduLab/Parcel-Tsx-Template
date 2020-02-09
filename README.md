@@ -4,6 +4,16 @@
 >
 > 仍处于完善阶段。
 
+## 已集成
+
+- React + React Router
+- TypeScript
+- Antd
+- Less
+- Babel
+- ESLint
+- Jest + Enzyme
+
 ## 起步
 
 ```bash
