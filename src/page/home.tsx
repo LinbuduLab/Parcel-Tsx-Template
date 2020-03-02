@@ -2,7 +2,7 @@ import * as React from "react";
 import { Avatar } from "antd";
 
 // @ts-ignore
-import img from "../../static/gaoda.png";
+import img from "../../static/Gundam.png";
 
 const Home: React.FC = () => {
   return (
