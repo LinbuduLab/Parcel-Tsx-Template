@@ -6,13 +6,10 @@ English | [简体中文](README-zh-CN.md)
 
 This is a simple template which help you to start a project quickly with [Parcel](https://github.com/parcel-bundler/parcel), which includes tool below:
 
-- Typescript(3.7.5)
-- React(16.12.0)
-- Antd(3.26.12)
+- Typescript(4.0.2)
+- React(16.13.1)
 - Jest(25.1.0) & Enzyme(3.11.0)
-- ESLint(6.8.0)
-  - ESLint-Config-Prettier
-  - ESLint-Config-React-App
+- @Ice/spec(eslint & prettier config support)
 - Less(3.10.3)
 
 I skip some configuration and toolkit/framework/solution to make it can be customized and configurable for most people. Like you can choose `Styled-Components` + `React-Redux` or `CSS Modules` + `Dva`, just do it you like.

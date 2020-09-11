@@ -14,32 +14,32 @@
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.0.0-0",
-    "@babel/preset-env": "^7.8.6",
-    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-jest": "^25.1.0",
+    "babel-plugin-import": "^1.13.0",
+    "less": "^3.10.3",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "typescript": "^4.0.2"
+  },
+  "devDependencies": {
+    "@ice/spec": "^1.0.1",
     "@jest/core": "^25.1.0",
-    "@types/node": "^13.7.0",
+    "@testing-library/react-hooks": "^3.4.1",
+    "@types/enzyme": "^3.10.6",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^26.0.13",
+    "@types/node": "^13.13.18",
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
     "@types/react-router-dom": "^5.1.3",
-    "antd": "^3.26.12",
-    "babel-jest": "^25.1.0",
-    "babel-plugin-import": "^1.13.0",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
-    "eslint": "^6.8.0",
+    "enzyme-adapter-react-16": "^1.15.4",
     "jest": "^25.1.0",
-    "less": "^3.10.3",
-    "parcel-bundler": "^1.12.4",
-    "prettier": "^1.19.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-router-dom": "^5.1.2",
-    "typescript": "^3.7.5"
-  },
-  "devDependencies": {
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-config-react-app": "^5.2.0",
-    "eslint-plugin-html": "^6.0.0",
-    "eslint-plugin-react": "^7.18.3"
+    "jest-enzyme": "^7.1.2",
+    "ts-jest": "^26.3.0"
   }
 }
