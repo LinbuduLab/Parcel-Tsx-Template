@@ -1,7 +1,4 @@
-import * as React from 'react';
-
-// @ts-ignore
-import img from '../../static/Gundam.png';
+import React from 'react';
 
 const Home: React.FC = () => {
   return (

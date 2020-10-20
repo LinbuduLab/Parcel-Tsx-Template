@@ -1,0 +1,23 @@
+name: parcel-tsx-template ci
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Deps Installation
+        run: npm install
+        env:
+          CI: true
+      - name: Build Up
+        run: npm run build
+      - name: Unit Test
+        run: npm run test

@@ -2,3 +2,4 @@
 /.cache/
 /dist/
 /coverage/
+yarn-error.log

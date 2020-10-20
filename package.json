@@ -3,43 +3,58 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "parcel ./public/index.html",
-    "build": "parcel build ./public/index.html",
-    "test": "jest"
+    "build": "rimraf -rf dist && parcel build ./public/index.html --experimental-scope-hoisting",
+    "test": "jest",
+    "plugin": "cd ./parcel-plugin-demo && npm link && cd ../ && sudo yarn add file:./parcel-plugin-demo/"
   },
-  "main": "index.js",
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "static",
+        "staticOutDir": "static"
+      }
+    ],
+    "watcherGlob": "**"
+  },
   "alias": {
-    "page": "./src/page",
-    "components": "./src/components"
+    "@/pages": "./src/pages",
+    "@/components": "./src/components"
   },
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.0.0-0",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/preset-react": "^7.10.4",
-    "babel-jest": "^25.1.0",
-    "babel-plugin-import": "^1.13.0",
-    "less": "^3.10.3",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "babel-jest": "^26.6.0",
+    "babel-plugin-import": "^1.13.1",
+    "less": "^3.12.2",
     "parcel-bundler": "^1.12.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
-    "typescript": "^4.0.2"
+    "typescript": "^4.0.3"
   },
   "devDependencies": {
     "@ice/spec": "^1.0.1",
-    "@jest/core": "^25.1.0",
-    "@testing-library/react-hooks": "^3.4.1",
-    "@types/enzyme": "^3.10.6",
+    "@jest/core": "^26.6.0",
+    "@testing-library/react-hooks": "^3.4.2",
+    "@types/enzyme": "^3.10.7",
     "@types/enzyme-adapter-react-16": "^1.0.6",
-    "@types/jest": "^26.0.13",
-    "@types/node": "^13.13.18",
-    "@types/react": "^16.9.19",
-    "@types/react-dom": "^16.9.5",
-    "@types/react-router-dom": "^5.1.3",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.10",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.6",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.4",
-    "jest": "^25.1.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "eslint": "^7.11.0",
+    "jest": "^26.6.0",
     "jest-enzyme": "^7.1.2",
-    "ts-jest": "^26.3.0"
+    "parcel-plugin-bundle-visualiser": "^1.2.0",
+    "parcel-plugin-demo": "file:./parcel-plugin-demo/",
+    "react-test-renderer": "^16.14.0",
+    "rimraf": "^3.0.2",
+    "stylelint": "^13.7.2",
+    "ts-jest": "^26.4.1"
   }
 }

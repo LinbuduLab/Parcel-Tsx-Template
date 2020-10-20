@@ -1,7 +1,7 @@
 import React from 'react';
 import Enzyme, { mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import Header from '../../src/page/home';
+import Header from '../../src/pages/home';
 
 Enzyme.configure({ adapter: new Adapter() });
 

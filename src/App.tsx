@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './page/home';
+import Home from '@/pages/home';
 
 import './style/index.less';
 
@@ -11,7 +11,6 @@ const App: React.FC<IApp> = ({ name }) => {
   return (
     <>
       <p className="favor">Hi! {name}</p>
-
       <Home />
     </>
   );
