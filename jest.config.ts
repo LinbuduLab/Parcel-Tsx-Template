@@ -1,11 +1,8 @@
-module.exports = {
+export default {
   clearMocks: true,
   collectCoverage: true,
-
   collectCoverageFrom: ['src/*.{js,ts}', 'src/**/*.{js,ts}'],
-
   coverageReporters: ['json', 'text', 'lcov', 'clover'],
-
   coverageThreshold: {
     global: {
       branches: 90,
