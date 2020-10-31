@@ -6,7 +6,8 @@
         "modules": false
       }
     ],
-    ["@babel/preset-react"]
+    ["@babel/preset-react"],
+    ["@babel/preset-typescript"]
   ],
   "plugins": [
     [
@@ -15,6 +16,15 @@
         "libraryName": "antd",
         "libraryDirectory": "es",
         "style": "css"
+      }
+    ],
+    [
+      "babel-plugin-styled-components",
+      {
+        "minify": false,
+        "transpileTemplateLiterals": false,
+        "pure": true,
+        "displayName": false
       }
     ]
   ]
