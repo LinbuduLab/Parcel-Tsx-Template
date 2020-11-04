@@ -13,6 +13,11 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
   "alias": {
     "@/pages": "./src/pages",
     "@/components": "./src/components"
@@ -27,11 +32,6 @@
     "watcherGlob": "**"
   },
   "license": "MIT",
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    }
-  },
   "dependencies": {
     "husky": "^4.3.0",
     "parcel-bundler": "^1.12.4",
@@ -63,7 +63,9 @@
     "babel-plugin-import": "^1.13.1",
     "babel-plugin-styled-components": "^1.11.1",
     "commitizen": "^4.2.2",
+    "commitlint-config-cz": "^0.13.2",
     "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.3.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "eslint": "^7.12.1",
