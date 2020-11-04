@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Para = styled.p<{ size: string }>`
+export const Para = styled.p<{ size?: string }>`
   font-size: ${(props) => props.size || '1em'};
   text-align: center;
   color: steelblue;

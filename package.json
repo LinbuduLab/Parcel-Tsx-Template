@@ -1,10 +1,21 @@
 {
-  "name": "parcel-ts-boilerplate",
-  "version": "1.0.0",
+  "name": "parcel-tsx-boilerplate",
+  "version": "0.0.1",
   "scripts": {
     "dev": "parcel ./public/index.html",
     "build": "rimraf -rf dist && parcel build ./public/index.html --experimental-scope-hoisting",
-    "test": "jest"
+    "test": "jest",
+    "commit": "git-cz"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "alias": {
+    "@/pages": "./src/pages",
+    "@/components": "./src/components"
   },
   "staticFiles": {
     "staticPath": [
@@ -15,12 +26,14 @@
     ],
     "watcherGlob": "**"
   },
-  "alias": {
-    "@/pages": "./src/pages",
-    "@/components": "./src/components"
-  },
   "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
   "dependencies": {
+    "husky": "^4.3.0",
     "parcel-bundler": "^1.12.4",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
@@ -33,6 +46,8 @@
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.1",
     "@babel/preset-typescript": "^7.12.1",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@ice/spec": "^1.0.1",
     "@jest/core": "^26.6.1",
     "@testing-library/react-hooks": "^3.4.2",
@@ -47,12 +62,17 @@
     "babel-jest": "^26.6.1",
     "babel-plugin-import": "^1.13.1",
     "babel-plugin-styled-components": "^1.11.1",
+    "commitizen": "^4.2.2",
+    "cz-conventional-changelog": "^3.3.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "eslint": "^7.12.1",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.1",
     "jest-enzyme": "^7.1.2",
     "parcel-plugin-bundle-visualiser": "^1.2.0",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.1.0",
     "react-test-renderer": "^16.14.0",
     "rimraf": "^3.0.2",
     "stylelint": "^13.7.2",
