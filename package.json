@@ -5,7 +5,7 @@
     "dev": "parcel ./public/index.html",
     "build": "rimraf -rf dist && parcel build ./public/index.html --experimental-scope-hoisting",
     "test": "jest",
-    "commit": "git-cz"
+    "commit": "git add . && git-cz"
   },
   "husky": {
     "hooks": {
