@@ -8,7 +8,9 @@ interface IApp {
 const App: React.FC<IApp> = ({ name }) => {
   return (
     <>
-      <p className="favor">Hi! {name}</p>
+      <p className="favor" style={{ textAlign: 'center' }}>
+        Hi! {name}
+      </p>
       <Home />
     </>
   );
