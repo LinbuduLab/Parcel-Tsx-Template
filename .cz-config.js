@@ -18,7 +18,7 @@ module.exports = {
       value: ':white_check_mark: test',
       name: 'test:     Add/Remove Test Cases',
     },
-    { value: ':hammer: refactor', name: 'refactor: Refratoring' },
+    { value: ':hammer: refactor', name: 'refactor: Refactoring' },
     { value: ':lock: fix', name: 'fix:      Fix Safe Problem' },
     { value: ':rocket: deploy', name: 'deploy:   Deploy' },
     { value: ':art: style', name: 'style:    Code Style' },
