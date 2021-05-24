@@ -63,7 +63,9 @@ const App: React.FC<IApp> = ({ name }) => {
         Click to add count!
       </StyledButton>
 
-      <Home />
+      <div>
+        <Home />
+      </div>
     </>
   );
 };

@@ -9,15 +9,5 @@
     ["@babel/preset-react"],
     ["@babel/preset-typescript"]
   ],
-  "plugins": [
-    [
-      "babel-plugin-styled-components",
-      {
-        "minify": false,
-        "transpileTemplateLiterals": false,
-        "pure": true,
-        "displayName": false
-      }
-    ]
-  ]
+  "plugins": [["babel-plugin-styled-components"]]
 }
