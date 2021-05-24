@@ -8,8 +8,6 @@ UNDER REFACTORING
 - [x] Sample Code
 - [x] Multi Targets
   - [#6342](https://github.com/parcel-bundler/parcel/issues/6342)
-- [ ] Unit Tests
-- [ ] E2E Tests
 - [ ] Linter
 - [ ] CI/CD
 - [ ] Documentations

@@ -20,10 +20,10 @@ jobs:
         uses: actions/setup-node@v1
 
       - name: Deps Installation
-        run: npm install
+        run: yarn
 
       - name: Build Up
-        run: npm run build
+        run: yarn build
 
       - name: Unit Test
-        run: npm run test
+        run: yarn test
