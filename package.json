@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "parcel serve ./src/index.html",
-    "build": "rimraf -rf ./dist/app && parcel build ./src/index.html --target app ",
+    "build": "rimraf -rf ./dist/app && parcel build ./src/index.html --target app",
     "build:modern": "rimraf -rf ./dist/appModern && parcel build ./src/index.html --target appModern",
     "clean": "rimraf -rf ./node_modules",
     "test": "jest",
@@ -18,20 +18,20 @@
   "app": "./dist/app/index.html",
   "appModern": "./dist/appModern/index.html",
   "source": [
-    "src/index.html"
+    "src/*"
   ],
   "targets": {
     "app": {
       "engines": {
         "browsers": "> 0.25%"
       },
-      "distDir": "./dist/app/index.html"
+      "distDir": "./dist/app"
     },
     "appModern": {
       "engines": {
         "browsers": "Chrome 80"
       },
-      "distDir": "./dist/appModern/index.html"
+      "distDir": "./dist/appModern"
     }
   },
   "config": {
