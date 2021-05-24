@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Home from '@/pages/home';
 
-import AvatarURL from './assets/avatar.jpg';
+import AvatarURL from 'url:./assets/avatar.jpg';
 
 interface IApp {
   name: string;

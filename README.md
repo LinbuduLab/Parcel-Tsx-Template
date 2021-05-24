@@ -2,11 +2,14 @@
 
 Parcel 2 + React 17 + TypeScript 4.2
 
-- 项目依赖升级
-- 去除无用依赖
-- lint相关配置
-- 测试
-- E2E
-- 文档
-- CI CD
-- UI库
+UNDER REFACTORING
+
+- [x] Parcel 2 + React 17 + TypeScript 4
+- [x] Sample Code
+- [x] Multi Targets
+  - [#6342](https://github.com/parcel-bundler/parcel/issues/6342)
+- [ ] Unit Tests
+- [ ] E2E Tests
+- [ ] Linter
+- [ ] CI/CD
+- [ ] Documentations
