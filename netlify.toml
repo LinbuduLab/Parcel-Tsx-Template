@@ -6,8 +6,10 @@
     command = "yarn build"
 
 [[plugins]]
+    ackage = "@netlify/plugin-lighthouse"
 
 [context.production]
+    publish = "dist/"
 
 [context.deploy-preview]
     publish = "dist/"
