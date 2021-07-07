@@ -6,7 +6,7 @@
     command = "yarn build"
 
 [[plugins]]
-    ackage = "@netlify/plugin-lighthouse"
+    package = "@netlify/plugin-lighthouse"
 
 [context.production]
     publish = "dist/"
