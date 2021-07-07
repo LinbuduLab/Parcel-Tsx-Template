@@ -1,6 +1,8 @@
 # https://docs.netlify.com/configure-builds/file-based-configuration/#sample-file
 [build.environment]
     YOUR_NELTIFY_VARIABLE = "YOUR_NELTIFY_VARIABLE"
+    NODE_VERSION = "14.15"
+    NODE_ENV = "development"
     base = "/"
     publish = "dist/"
     command = "yarn build"
