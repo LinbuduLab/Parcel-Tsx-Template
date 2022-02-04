@@ -1,22 +1,58 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from "react";
+import logo from "./logo.svg";
+import parcel from "./parcel.png";
+import "./App.css";
 
-const App: React.FC = () => {
-  const [count, setCount] = useState<number>(0);
+type Timer = ReturnType<typeof setInterval>;
 
-  useEffect(() => { }, []);
+function App() {
+  const [count, setCount] = useState(0);
+  const timer = useRef<Timer>();
+
+  useEffect(() => {
+    timer.current = setInterval(() => {
+      setCount((c) => c + 1);
+    }, 1000);
+
+    return () => {
+      if (timer.current) clearInterval(timer.current);
+    };
+  }, []);
 
   return (
-    <>
-      <h1> {count}</h1>
-      <button
-        onClick={() => {
-          setCount((c) => c + 1);
-        }}
-      >
-        Click to add count!
-      </button>
-    </>
+    <div className="App">
+      <header className="App-header">
+        <div className="App-logo-container">
+          <img src={logo} className="App-logo" alt="logo" />
+          <img src={parcel} className="Parcel-logo" alt="logo" />
+        </div>
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+          <br />
+          <br />
+          <code>Count: {count}</code>
+        </p>
+        <div>
+          <a
+            className="React-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+          <a
+            className="Parcel-link"
+            href="https://parceljs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn Parcel
+          </a>
+        </div>
+      </header>
+    </div>
   );
-};
+}
 
 export default App;
