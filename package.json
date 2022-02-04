@@ -2,8 +2,9 @@
   "name": "parcel-tsx-boilerplate",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel ./public/index.html",
+    "start": "parcel serve ./public/index.html --port 3000 --open --target appModern",
     "build": "rimraf -rf ./dist/app && parcel build ./public/index.html --target app",
+    "build:watch": "parcel watch ./public/index.html --target app",
     "build:modern": "rimraf -rf ./dist/appModern && parcel build ./public/index.html --target appModern",
     "clean": "rimraf -rf ./node_modules",
     "test": "jest"

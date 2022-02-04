@@ -7,12 +7,19 @@ type Timer = ReturnType<typeof setInterval>;
 
 function App() {
   const [count, setCount] = useState(0);
+  const [dynamicModuleLoaded, setDynamicModuleLoaded] = useState(false);
+
   const timer = useRef<Timer>();
 
   useEffect(() => {
     timer.current = setInterval(() => {
       setCount((c) => c + 1);
     }, 1000);
+
+    import("./dynamic-module").then((res) => {
+      console.log("From Dynamic Module: ", res.dynamic());
+      setDynamicModuleLoaded(true);
+    });
 
     return () => {
       if (timer.current) clearInterval(timer.current);
@@ -32,6 +39,7 @@ function App() {
           <br />
           <code>Count: {count}</code>
         </p>
+        {dynamicModuleLoaded && <p>Dynamic Module Loaded!</p>}
         <div>
           <a
             className="React-link"
