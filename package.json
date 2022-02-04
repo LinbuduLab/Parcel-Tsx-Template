@@ -2,36 +2,31 @@
   "name": "parcel-tsx-boilerplate",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel serve ./public/index.html --port 3000 --open --target appModern",
-    "build": "rimraf -rf ./dist/app && parcel build ./public/index.html --target app",
-    "build:watch": "parcel watch ./public/index.html --target app",
-    "build:modern": "rimraf -rf ./dist/appModern && parcel build ./public/index.html --target appModern",
-    "clean": "rimraf -rf ./node_modules",
+    "start": "parcel serve ./public/index.html --port 3000 --open --target modern",
+    "build:watch": "parcel watch ./public/index.html --target modern",
+    "build": "yarn build:legacy && yarn build:modern",
+    "build:legacy": "parcel build ./public/index.html --target legacy",
+    "build:modern": "parcel build ./public/index.html --target modern",
     "test": "jest"
   },
   "license": "MIT",
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
-  },
-  "app": "./dist/app/index.html",
-  "appModern": "./dist/appModern/index.html",
+  "legacy": "./dist/legacy/index.html",
+  "modern": "./dist/modern/index.html",
   "source": [
     "src/*"
   ],
   "targets": {
-    "app": {
+    "legacy": {
       "engines": {
-        "browsers": "> 0.25%"
+        "browsers": "> 0.5%, last 2 versions, not dead"
       },
-      "distDir": "./dist/app"
+      "distDir": "./dist/legacy"
     },
-    "appModern": {
+    "modern": {
       "engines": {
         "browsers": "Chrome 80"
       },
-      "distDir": "./dist/appModern"
+      "distDir": "./dist/modern"
     }
   },
   "alias": {
@@ -58,7 +53,6 @@
     "@types/node": "^17.0.14",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
-    "husky": "^7.0.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.4.7",
     "parcel": "^2.2.1",

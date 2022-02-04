@@ -8,7 +8,7 @@ jobs:
   build:
     strategy:
       matrix:
-        node-version: [12.x, 14.x]
+        node-version: [12.x, 14.x, 16.x]
         os: [ubuntu-latest, windows-latest, macOS-latest]
 
     runs-on: ${{ matrix.os }}
@@ -26,6 +26,3 @@ jobs:
 
       - name: Build Up
         run: yarn build
-
-      - name: Unit Test
-        run: yarn test

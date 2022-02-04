@@ -9,3 +9,4 @@
 --lazy
 --cache-dir
 --log-level
+GraphQL
