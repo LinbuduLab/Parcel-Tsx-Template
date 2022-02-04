@@ -1,10 +1,11 @@
 # Parcel-Tsx-Template
 
-![Parcel](https://img.shields.io/github/package-json/dependency-version/LinbuduLab/Parcel-Tsx-Template/parcel)
+![Parcel](https://img.shields.io/github/package-json/dependency-version/LinbuduLab/Parcel-Tsx-Template/parcel?label=parcel%282.2.1%29)
 ![React](https://img.shields.io/github/package-json/dependency-version/LinbuduLab/Parcel-Tsx-Template/react)
 ![TypeScript](https://img.shields.io/github/package-json/dependency-version/LinbuduLab/Parcel-Tsx-Template/typescript)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/linbudu599/Parcel-Tsx-Template/parcel-tsx-template%20ci)
-![License](https://img.shields.io/github/license/linbudu599/Parcel-Tsx-Template)
+
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/LinbuduLab/Parcel-Tsx-Template/parcel-tsx-template%20ci)
+![License](https://img.shields.io/github/license/LinbuduLab/Parcel-Tsx-Template)
 
 Parcel 2 + React 17 + TypeScript 4 made easy.
 
